@@ -1,0 +1,445 @@
+@import 'animate.css';
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+:root {
+	font-family: 'Comfortaa', sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+
+	// Gradient ON! :
+
+	color-scheme: light dark;
+	color: #87CEEB;
+	background-image: linear-gradient(-20deg, #f2d1d1 0%, #f2e2c6 50%, #c5d5e8 100%);
+	background-repeat: no-repeat;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+a {
+	font-weight: 500;
+	color: #87CEEB;
+	text-decoration: inherit;
+}
+
+a:hover {
+	color: #87CEEB;
+}
+
+.logo {
+	width: 20%;
+
+	flex-direction: column;
+	align-items: center;
+	min-width: 100px;
+	max-width: 16em;
+	height: auto;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	place-items: center;
+	min-width: 320px;
+	min-height: 100vh;
+	// background-image: linear-gradient(-20deg, #f2d1d1 0%, #f2e2c6 50%, #c5d5e8 100%);
+	// background-repeat: no-repeat;
+	// font-family: 'Grenze', serif;
+	// color: #87CEEB;
+}
+
+@media (max-width: 768px) {
+	body {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+
+h1 {
+	font-size: 3.2em;
+	color: #87CEEB;
+	line-height: 1.1;
+}
+
+button {
+	border-radius: 1em;
+	border: 1px solid transparent;
+	/* light blue*/
+	color: #87CEEB;
+	padding: 0.8em 1.5em;
+	font-size: 1.2em;
+	font-weight: 600;
+	font-family: 'Comfortaa', sans-serif;
+	/* pale pink */
+	background-color: rgba(253, 255, 143, 0.09);
+	// opacity: 0.5;
+	/* or f9f9f9 fce4ec*/
+	cursor: pointer;
+	transition: border-color 0.25s;
+}
+
+
+button:hover {
+	border-color: #FCABCC;
+}
+
+button:focus,
+button:focus-visible {
+	outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+	padding: 2em;
+	font-size: 1.5em;
+	font-weight: 500;
+	font-family: inherit;
+}
+
+#app {
+	width: 100vw;
+	height: 100vh;
+	margin-top: 10em;
+	padding: 2rem;
+	text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		color: #87CEEB;
+		background-color: #ffffff;
+	}
+
+	a:hover {
+		color: #747bff;
+	}
+
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	text-align: center;
+}
+
+.read-the-docs {
+	color: #888;
+}
+
+.black-screen {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: black;
+	z-index: 9999;
+}
+
+/* text effects */
+/* typing */
+.typingmachine {
+
+	width: 22ch;
+	animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	/* border-right: 3px solid; */
+	font-family: monospace;
+	font-size: 2.3em;
+	margin-left: auto;
+	margin-right: auto
+}
+
+@keyframes typing {
+	from {
+		width: 0
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: #ffffff
+	}
+}
+
+/* other */
+
+.myflashClass {
+
+	animation: flash;
+	/* referring directly to the animation's @keyframe declaration */
+	animation-duration: 4s;
+	/* don't forget to set a duration! */
+}
+
+/* responsive try*/
+.app-container {
+	margin-top: -13em;
+}
+
+@media (max-width: 300px) {
+	.app-container {
+		padding: 5px;
+	}
+}
+
+/* Styles for screens smaller than 600px */
+@media (min-width: 300px) and (max-width: 600px) {
+	.app-container {
+		padding: 10px;
+	}
+}
+
+/* Styles for screens between 600px and 900px */
+@media (min-width: 600px) and (max-width: 900px) {
+	.app-container {
+		padding: 20px;
+	}
+}
+
+/* Styles for screens larger than 900px */
+@media (min-width: 900px) {
+	.app-container {
+		padding: 30px;
+	}
+}
+
+
+/*Toggle*/
+
+.my-toggle * {
+	box-sizing: border-box;
+}
+
+.my-toggle *:before,
+.my-toggle *:after {
+	content: '';
+	position: absolute;
+}
+
+.file-input {
+	height: 40px;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 40px;
+}
+
+.toggle-wrapper {
+
+	flex: 1 1 calc(100% / 3);
+	min-height: 50vh;
+	display: inline;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+
+	@media (max-width: 960px) {
+		flex: 1 1 calc(100% / 2);
+	}
+
+	@media (max-width: 700px) {
+		flex: 1 1 100%;
+	}
+
+	background: transparent;
+}
+
+
+.toggle {
+	position: relative;
+	display: inline-block;
+}
+
+label.toggle-item {
+	width: 7em;
+	background: #b0bed8;
+	height: 3em;
+	display: inline-block;
+	border-radius: 50px;
+	margin: 20px;
+	position: relative;
+	transition: all .3s ease;
+	transform-origin: 20% center;
+	cursor: pointer;
+
+	&:before {
+		display: block;
+		transition: all .2s ease;
+		width: 2.3em;
+		height: 2.3em;
+		top: .25em;
+		left: .25em;
+		border-radius: 2em;
+		border: 2px solid #88cf8f;
+		transition: .3s ease;
+	}
+}
+
+
+.checkcross {
+	label:before {
+		content: none;
+	}
+
+	.check {
+		border-radius: 50%;
+		width: 2.5em;
+		height: 2.5em;
+		position: absolute;
+		background: #c34a4a;
+		transition: .4s ease;
+		top: 3.8px;
+		left: 4.5px;
+
+		&:before,
+		&:after {
+			height: 4px;
+			border-radius: 10px;
+			background: #ffffff;
+			transition: .4s ease;
+			padding-right: 20%;
+		}
+
+		&:before {
+			width: 27px;
+			transform: rotate(-45deg) translate(-9px, 15px);
+			left: 0;
+
+		}
+
+		&:after {
+			width: 27px;
+			transform: rotate(45deg) translate(15px, 9px);
+			left: 0;
+
+		}
+	}
+}
+
+#checkcross:checked+label {
+	.check {
+		left: 59px;
+		transform: rotate(360deg);
+		background: #8BC34A;
+
+		&:before {
+			width: 25px;
+			transform: rotate(-45deg) translate(-6px, 20px);
+			left: 0px;
+			top: 0px;
+
+		}
+
+		&:after {
+			width: 10px;
+			transform: rotate(45deg) translate(20px, 11px);
+			left: 0px;
+			top: 0px;
+		}
+	}
+}
+
+.toggle-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	opacity: .8;
+	font-weight: bold;
+	text-decoration: inherit;
+}
+
+// pong
+
+
+@keyframes pad {
+	0% {
+		transform: translate3d(0, 0, 0)
+	}
+
+	50% {
+		transform: translate3d(0, 100px, 0)
+	}
+
+	100% {
+		transform: translate3d(0, 0, 0)
+	}
+}
+
+@keyframes ball {
+	0% {
+		transform: translate3d(0, 0, 0)
+	}
+
+	50% {
+		transform: translate3d(140px, 100px, 0)
+	}
+
+	100% {
+		transform: translate3d(0, 0, 0)
+	}
+}
+
+#pong {
+	position: relative;
+	margin: auto;
+	height: 130px;
+	width: 200px;
+	// box-sizing: border-box;
+	text-align: center;
+	padding: 0 10px;
+	font-size: 0;
+
+	.pad {
+		float: left;
+		display: block;
+		width: 5px;
+		height: 30px;
+		background-color: #da6060;
+		margin-left: 10px;
+		border-radius: 15px;
+		animation: pad 2s infinite ease-in-out;
+	}
+
+	.ball {
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		float: left;
+		background-color: #25b9df;
+		animation: ball 2s infinite linear;
+	}
+
+	.ball+.pad {
+		margin-left: 140px;
+		animation: 2s pad -.4s infinite ease-in;
+	}
+
+	//match the hit if i move the duration i have to adjust the -.4s
+}
+
+.clickable {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.chat-image {
+	width: 20%;
+	position: relative;
+	/* Adjust the width as per your requirement */
+	height: auto;
+	/* Adjust the height as per your requirement */
+}

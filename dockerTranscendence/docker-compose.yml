@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  postgres:
+    container_name: postgres_transcendence
+    image: postgres
+    restart: always
+    env_file: .env
+    environment:
+      - POSTGRES_USER:${POSTGRES_USER}
+      - POSTGRES_PASSWORD:${POSTGRES_PASSWORD}
+    volumes:
+      - db_vol_transcendence:/var/lib/postgresql/data
+    networks:
+      - transcendence
+    expose:
+      - 5432
+ 
+  nestjs:
+    container_name: nestjs_transcendence
+    image: nestjs
+    build: requirements/nestjs
+    init: true
+    env_file: .env
+    networks:
+      - transcendence
+    ports:
+      - 3000:3000
+    depends_on:
+      - postgres
+    restart: always
+
+  nodejs:
+    container_name: nodejs_transcendence
+    image: nodejs
+    build: requirements/nodejs
+    init: true
+    env_file: .env
+    networks:
+      - transcendence
+    ports:
+      - 5173:5173
+    depends_on:
+      - nestjs
+    restart: always
+
+volumes:
+  db_vol_transcendence:
+    name: postgresqldb_vol_transcendence
+    driver: local
+    driver_opts:
+      device: '/Users/${USER}/data/postgresqldb'
+      o: bind
+      type: none
+
+networks:
+  transcendence:
+    name: transcendence
+    driver: bridge

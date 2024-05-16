@@ -1,0 +1,44 @@
+{
+  "name": "my-app42",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "serve": "vue-cli-service serve"
+  },
+  "type": "module",
+  "dependencies": {
+    "@vue/cli": "latest",
+    "@vue/cli-service": "latest",
+    "animate.css": "latest",
+    "axios": "latest",
+    "base32-encode": "latest",
+    "bourbon": "latest",
+    "json-server": "latest",
+    "lodash": "latest",
+    "otplib": "latest",
+    "qrcode": "latest",
+    "quasar": "latest",
+    "socket.io-client": "latest",
+    "vue": "latest",
+    "vue-advanced-chat": "latest",
+    "vue-router": "latest",
+    "vue-sweetalert2": "latest",
+    "vuex": "latest",
+    "yarn": "latest"
+  },
+  "devDependencies": {
+    "@types/vue": "latest",
+    "@types/vue-router": "latest",
+    "@vitejs/plugin-vue": "latest",
+    "sass": "latest",
+    "typescript": "latest",
+    "vite": "latest",
+    "vue-tsc": "latest"
+  },
+  "exports": {
+    ".": "./types/index.d.ts"
+  }
+}

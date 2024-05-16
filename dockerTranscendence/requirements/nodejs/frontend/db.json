@@ -1,0 +1,194 @@
+{
+	"users": [
+		{
+			"id": 1,
+			"names": "nn1 🎮",
+			"type": "thePro",
+			"friends": [
+				"marc",
+				"palfi",
+				"nn2 🎮"
+			],
+			"achievements": [
+				"goldBall",
+				"greenTrohpy"
+			],
+			"logged": 1,
+			"won": 20,
+			"picture": "../src/myIcons/p5.png",
+			"sayHi": "fockU!",
+			"results": [
+				{
+					"won": 11,
+					"lost": 10,
+					"total": 21
+				}
+			],
+			"lastMatches": [
+				{
+					"game": 1,
+					"against": "player2",
+					"result": "5-2",
+					"icon": "../src/myIcons/win.png"
+				},
+				{
+					"game": 2,
+					"against": "player3",
+					"result": "1-3",
+					"icon": "../src/myIcons/lose.png"
+				},
+				{
+					"game": 3,
+					"against": "player2",
+					"result": "5-4",
+					"icon": "../src/myIcons/win.png"
+				},
+				{
+					"game": 4,
+					"against": "player4",
+					"result": "3-4",
+					"icon": "../src/myIcons/lose.png"
+				},
+				{
+					"game": 5,
+					"against": "player3",
+					"result": "5-2",
+					"icon": "../src/myIcons/win.png"
+				}
+			],
+			"userPic": "aLover",
+			"rank": "13"
+		},
+		{
+			"id": 2,
+			"names": "nn2 🎮",
+			"type": "theIdiot",
+			"friends": [
+				"okto",
+				"vilma",
+				"nn1 🎮",
+				"nn3 🎮"
+			],
+			"achievements": [
+				"plustenrohpy",
+				"anAlien"
+			],
+			"logged": 0,
+			"won": 90,
+			"picture": "../src/myIcons/p6.png",
+			"sayHi": "Imfriendly!",
+			"results": [
+				{
+					"won": 8,
+					"lost": 6,
+					"total": 14
+				}
+			],
+			"lastMatches": [
+				{
+					"against": "player1",
+					"result": "won"
+				},
+				{
+					"against": "player2",
+					"result": "lose"
+				}
+			],
+			"rank": "42",
+			"userPic": "asaddie"
+		},
+		{
+			"id": 3,
+			"names": "nn3 🎮",
+			"type": "bot",
+			"friends": [
+				"chinchulin",
+				"nn4 🎮"
+			],
+			"achievements": [
+				"noSignal"
+			],
+			"logged": 0,
+			"won": 30,
+			"picture": "../src/myIcons/p4.png",
+			"sayHi": "hola hola!",
+			"results": [
+				{
+					"won": 8,
+					"lost": 132,
+					"total": 140
+				}
+			],
+			"lastMatches": [
+				{
+					"against": "player6",
+					"result": "won"
+				},
+				{
+					"against": "player8",
+					"result": "won"
+				}
+			],
+			"rank": "114",
+			"userPic": "fluffy"
+		},
+		{
+			"id": 4,
+			"names": "nn4 🎮",
+			"type": "theSomeone",
+			"friends": [
+				"chinchulon",
+				"nn3 🎮"
+			],
+			"achievements": [
+				"ready",
+				"whitePaddle"
+			],
+			"logged": 1,
+			"won": 13,
+			"picture": "../src/myIcons/p5.png",
+			"sayHi": "noneurshit",
+			"results": [
+				{
+					"won": 13,
+					"lost": 10,
+					"total": 23
+				}
+			],
+			"lastMatches": [
+				{
+					"game": 1,
+					"against": "player5",
+					"result": "5-2",
+					"icon": "../src/myIcons/win.png"
+				},
+				{
+					"game": 2,
+					"against": "player8",
+					"result": "1-3",
+					"icon": "../src/myIcons/lose.png"
+				},
+				{
+					"game": 3,
+					"against": "player2",
+					"result": "8-4",
+					"icon": "../src/myIcons/win.png"
+				},
+				{
+					"game": 4,
+					"against": "player4",
+					"result": "3-4",
+					"icon": "../src/myIcons/lose.png"
+				},
+				{
+					"game": 5,
+					"against": "player3",
+					"result": "5-2",
+					"icon": "../src/myIcons/win.png"
+				}
+			],
+			"userPic": "theWarrior",
+			"rank": "31"
+		}
+	]
+}
